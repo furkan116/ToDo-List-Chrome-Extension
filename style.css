@@ -40,5 +40,59 @@
 }
 
 .navbar-main > button:hover {
+    cursor: pointer;
     background: #082032;
+}
+
+.todo-list-main {
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 350px;
+    height: 400px;
+}
+
+.todo-list {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.todo-list-item {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #334756;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-list-item:first {
+    margin-top: 0;
+}
+
+.todo-list-item > span {
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+.todo-list-item  > button {
+    margin-right: 8px;
+    background: none;
+    border: none;
+    border-radius: 100%;
+}
+
+.todo-list-item  > button > i {
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.todo-list-item  > button:hover {
+    background: #082032;
+    cursor: pointer;
 }
