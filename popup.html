@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <section class="main-section">
         <nav class="navbar-main">
@@ -23,7 +26,21 @@
                 </li>
             </ul>
         </div>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <form>
+                    <button class="close" id="addTodoButton"><i class="fas fa-map-pin"></i></button>
+                    <input type="text" maxlength="30" id="addTodoText" placeholder="30 character" required="" name="todo">
+                </form>
+            </div>
+
+        </div>
     </section>
+
     <script src="popup.js"></script>
 </body>
+
 </html>
